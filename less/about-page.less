@@ -5,18 +5,10 @@
       width: 105%;
     }
    
-    .img-content {
-        border-top:@border;
+    @media @phone {
+      width: 100%;
     }
-    .about-img {
-   
-     display:flex;
-     width: 800px;
-     height: 240px;
-     object-fit: cover;
-     margin-top: 30px;
-
-        }
+    
     h2 {
       margin-top: 30px;
       margin-left: 20px;
@@ -25,28 +17,25 @@
       font-family:Oswald;
       margin-bottom: 30px;
      
-    }
-    .p-about {
-      margin-top: 30px;
-      font-size:20px;
      
-      @media @phone {
-       font-size:18px;
-       margin: 20px;
-       line-height: 1.6;
-       text-indent: 10px;
-      
-      }
     }
-
+  
+     
+    
+     .border {
+      border-top:@border;
+      width: 100%;
+     }
     .team {
+  
       margin-top: 30px;
+   
       ul {
         .wrap();
         li {
           flex: 0 0 33.333333%;
           margin-bottom: 30px;
-        
+     
         }
       } 
     
