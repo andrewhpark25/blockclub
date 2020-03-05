@@ -136,6 +136,12 @@ html,
 body {
   color: #000000;
 }
+@media (max-width: 500px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
 h2,
 h3,
 h4,
@@ -206,12 +212,12 @@ footer p {
 }
 @media (max-width: 500px) {
   .intro {
-    width: 105%;
+    width: 100%;
   }
 }
 @media (max-width: 800px) {
   .intro {
-    width: 105%;
+    width: 100%;
   }
 }
 .home h2 {
@@ -380,15 +386,10 @@ footer p {
     width: 105%;
   }
 }
-.about .img-content {
-  border-top: 2px solid silver;
-}
-.about .about-img {
-  display: flex;
-  width: 800px;
-  height: 240px;
-  object-fit: cover;
-  margin-top: 30px;
+@media (max-width: 500px) {
+  .about {
+    width: 100%;
+  }
 }
 .about h2 {
   margin-top: 30px;
@@ -400,17 +401,9 @@ footer p {
   font-family: Oswald;
   margin-bottom: 30px;
 }
-.about .p-about {
-  margin-top: 30px;
-  font-size: 20px;
-}
-@media (max-width: 500px) {
-  .about .p-about {
-    font-size: 18px;
-    margin: 20px;
-    line-height: 1.6;
-    text-indent: 10px;
-  }
+.about .border {
+  border-top: 2px solid silver;
+  width: 100%;
 }
 .about .team {
   margin-top: 30px;
