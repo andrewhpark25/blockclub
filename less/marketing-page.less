@@ -19,11 +19,19 @@
     @media @tablet {
       width:100%;
     }
+   
   }
-  
+
   .home {
 
-    
+    .img-content {
+      flex:0 0 44.444444%;
+      display:flex;
+       @media @phone {
+         width:100%;
+       
+       }
+     }
     h2 {
       font-size: 3.2rem;
       padding-bottom: 10px;
@@ -36,6 +44,12 @@
       font-size: 20px;
       margin: 50px;
       text-align: center;
+      @media @phone {
+        margin:20px;
+        font-size:18px;
+      
+      
+      }
     }
     
   .content-section {
@@ -49,12 +63,21 @@
       width: 48%;
       padding-right: 1%;
       align-self:center;
-      
+     @media @phone {
+      width: 100%;
+      padding: 50px;
+  
+       h2 {
+          margin-top:50px;
+       }
+       p {
+         margin-bottom:50px;
+       }
+     }
     }
 
     .img-content {
-      width: 48%;
-      padding-left: 1%;
+     
       img {
         width: 100%;
       height: auto;
@@ -66,11 +89,10 @@
     }
     @media @phone {
       .reverse();
-      width: 200%;
       padding: 10px;
       margin-top:15px;
      .text-content {
-         align-self:flex-start;
+      align-self:center;
          margin-top:30px;
      }
     }
@@ -87,13 +109,17 @@
       padding-left: 1%;
       padding-right: 0;
     
-   
+    @media @phone {
+      align-self:center;
+      margin-top:30px;
+      width: 100%;
+      padding: 50px;
+    }
     }
 
     .img-content {
-      padding-right: 1%;
-      padding-left: 0;
-
+   
+    
       @media @tablet {
         margin-left: 15px;
       }
@@ -105,6 +131,7 @@
       .img-content {
         padding-left:1%;
         margin-bottom: 30px;
+        margin-left:-5px;
       }
     }
   }
@@ -118,34 +145,36 @@
       width: 48%;
       padding-right: 1%;
       margin-top:30px;
+      @media @phone {
+        align-self:center;
+        width: 100%;
+        padding: 50px;
+    
+      }
     
     }
 
     .img-content {
-      width: 48%;
-      padding-left: 1%;
+  
 
       img {
         width: 100%;
       height: auto;
       border-radius: 10px;
       }
-      @media @tablet {
+    
         @media @tablet {
           margin-right: 15px;
         }
-      }
     }
     @media @phone {
       .reverse();
       border-top:none;
-      width: 200%;
       padding: 5px;
       padding-top:30px;
-      margin-left: 20px;
-      margin-top:-80px;
+
       .img-content{
-        margin-left:-15px;
+      
         border-radius:20px;
       }
     }
@@ -157,16 +186,18 @@
     font-family: Oswald;
     margin-top:45px;
     margin-left:230px;
+
     &:hover {
       .design(@white, @background-color, 10px);
       .animation(scale(1.3));                
     }
     @media @phone {
-      .design(@background-color, @white, 20px);
+      .design(@background-color, @white, 10px);
       .design2(8px; 40%; 18px);
-      margin-left:150px;
+      margin-left:155px;
+  
       &:hover {
-        .design(@white, @background-color, 20px);
+        .design(@white, @background-color, 10px);
       }
         }
     }
